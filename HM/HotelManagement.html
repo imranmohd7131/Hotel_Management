@@ -1,0 +1,162 @@
+<html>
+<head>
+<style>
+*{
+margin:0px;
+padding:0px;
+box-sizing:border-box;
+}
+.main{
+max-width:1280px;
+margin:0 auto;
+}
+.head{
+margin:0 auto;
+height:100px;
+width:1280px;
+background:#4caf50;
+color:white;
+font-size:85px;
+font-family:Consolas;
+margin-bottom:10px;
+border:2px solid grey;
+border-radius:20px;
+animation:ab 4s infinite;
+}
+@keyframes ab{
+ 0%{background:#4caf50;}
+10%{background:#f44336;}
+20%{background:#3f51b5;}
+30%{background:#e91e63;}
+40%{background:#2196f3;}
+50%{background:#ffa726;}
+}
+.list li{
+padding:10px 30px;
+display:inline-block;
+margin-top:10px;
+margin-left:13px;
+border:3px solid grey;
+border-radius:200px;
+background:#FF9800;
+}
+.row li a{
+font-size:26px;
+font-family:Consolas;
+text-decoration:none;
+color:black;
+}
+.img{
+width:400px;
+height:auto;
+margin-top:30px;
+float:left;
+}
+.ig{
+border-radius:30px;
+float:left;
+}
+.img2{
+float:right;
+margin-top:30px;
+}
+.footer{
+float:left;
+margin-top:40px;	
+width:1280px;
+height:240px;
+background:#1d1919;
+}
+.text{
+margin-left:14px;
+color:white;
+font-size:40px;
+font-family:Consolas;
+float:left;
+}
+.logo{
+height:40px;
+width:40px;
+margin-left:800px;
+margin-top:40px;
+}
+.logo2{
+height:40px;
+width:40px;
+margin-left:800px;
+}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="main">
+<div class="head">
+<center>HOTEL MANAGEMENT SYSTEM</center></div>
+<img name="slide" height="600" width="1280">
+<script>
+var i=0;
+var images=[];
+var time=2000;
+
+images[0]="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/hotel-1400x800.jpg";
+images[1]="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/69.jpg";
+images[2]="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/67.jpg";
+images[3]="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/9948_6648_AMSAZ_Exterior%20-%20Evening_Close.jpg";
+images[4]="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/images.jpg";
+function changeImg(){
+document.slide.src=images[i];
+if(i<images.length-1){
+i++;
+}else{
+i=0;
+}
+setTimeout("changeImg()",time);
+}
+window.onload=changeImg();
+</script>
+<div class="list">
+<ul class="row">
+<li><a target="blank" href="file:///C:/Users/Administrator/Desktop/CSS/HM/HotelManagement.html#">HOME</a></li>
+<li><a target="blank" href="#">RECEPTION</a></li>
+<li><a target="blank" href="file:///C:/Users/Administrator/Desktop/CSS/HM/Booking.html">BOOKINGS</a></li>
+<li><a target="blank" href="#">GALLERY</a></li>
+<li><a target="blank" href="file:///C:/Users/Administrator/Desktop/CSS/HM/login.html">LOGIN</a></li>
+<li><a target="blank" href="#">CONTACT US</a></li>
+<li><a target="blank" href="#">ABOUT</a></li></ul>
+</div>
+<div class="img">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/43.jpg" height=315 width=430 class="ig">
+<div class="img">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/55.jpg" height=315 width=430 class="ig">
+<div class="img">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/44.jpg" height=315 width=430 class="ig">
+</div>
+</div>
+</div>
+<div class="img2">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/surat-hotel-restaurant.jpg" height=485 width=765 >
+</div>
+<div class="img2">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/l_872e823a99e6fc04876bac1eecd70922.jpg" height=485 width=765 >
+</div>
+<div class="footer">
+<div class="text"><b>DESIGNED BY:</b><br>
+MOHD.IMRAN(9779813326)<br>
+ARSHAD ALI(7814767071)<br>
+<hr size="5" width="130%" color="#FF9800">
+HOTEL MANAGEMENT SYSTEM<br>
+HTML PROJECT</div>
+<div class="logo">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/header_icon_google.png" height=30 width=30></div>
+<div class="logo2">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/header_icon_twitter.png" height=30 width=30></div>
+<div class="logo2">
+<img src="file:///C:/Users/Administrator/Desktop/CSS/HM/Images/header_icon_facebook.png" height=30 width=30></div>
+</div>
+</div>
+</div>
+</nav>
+</header>
+</body>
+</html>
